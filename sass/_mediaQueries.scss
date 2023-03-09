@@ -1,0 +1,430 @@
+@media (min-width:550px) {
+//general//
+    .todasReceta {
+		font-size: 30px;
+	}
+	.contenedor {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+//index//
+	.gridIndex {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 120px 1fr 1fr;
+		justify-items: center;
+		grid-template-areas: 
+        "titulo titulo" 
+        "principal principal" 
+        "secundaria terciaria";
+	    .tituloRecetas {
+		    width: 100%;
+		    margin-top: 70px;
+		    font-size: 40px;
+        }
+        .prin {
+            display: flex;
+            flex-direction: row;
+            width: 86%;
+            justify-content: space-evenly;
+                img {
+                    width: 300px;
+                    height: 220px;
+                }
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    margin-right: 0.5em;
+                }
+        }
+        .seg {
+            img {
+                width: 220px;
+                height: 157px;
+            }
+            h4{
+                text-align: center;
+            }
+        }
+        .ter {
+            img {
+                width: 220px;
+                height: 157px;
+            }
+            h4{
+                text-align: center;
+            }
+        }
+	}
+//almuerzo//
+    .mainAlmuerzo{
+        h1{
+            font-size: 60px;
+        }
+    }
+	.padreCard {
+		h2 {
+			font-size: 25px;
+			margin-top: 2em;
+		}
+        .card {
+		    height: 400px;
+	    }
+    }
+	.gridAlmuerzo {
+		margin-top: 0px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: "pollo caprese" "espinaca ensalada" "wraps soufle" "arrollado huevo" "brochetas brochetas";
+		img {
+			width: 220px;
+			height: 157px;
+		}
+	}
+//cena//
+    .mainCena{
+        h1{
+            font-size: 60px;
+        }
+    }
+	.principalCena {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+        .textoCena{
+            font-size: 30px;
+        }
+        .principal{
+            flex-direction: row;
+            img{
+                width: 250px;
+                height: 177px;
+            }
+            .textoNoquis{
+                margin-top: 1em;
+                margin-right: 1em;
+            }
+        }
+	}
+    .gridCena {
+		display: grid;
+		margin-top: 0px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		justify-items: center;
+		grid-template-areas: 
+        "fideos milanesa" 
+        "horno papas" 
+        "calabaza pasta" 
+        "empanada tacos"
+        "noquis noquis";
+		img {
+			width: 220px;
+			height: 157px;
+		}
+        h3{
+            text-align: center;
+        }
+	}
+//postres//
+    .mainPostre{
+        h1{
+            font-size: 60px;
+        }
+    }
+	.recetaPostre {
+		h2 {
+			font-size: 30px;
+			margin-bottom: 0.5em;
+		}
+        .contenedorCarousel {
+            img {
+                width: 480px;
+                height: 350px;
+            }
+            h3 {
+                width: 480px;
+                font-size: 25px;
+            }
+            margin-bottom: 5em;
+        }
+	}
+    .reemplazos{
+        .fraseTips {
+            p {
+                font-size: 25px;
+            }
+        }
+        .sustitutoL {
+            margin-right: 6em;
+            p {
+                font-size: 20px;
+            }
+        }
+        .sustitutoR {
+            margin-left: 6em;
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+//footer//
+	.fraseFooter {
+        font-size: 35px;
+		margin-top: 0.4em;
+	}
+}
+
+@media (min-width:770px) {
+//general//
+	.todasReceta {
+		font-size: 35px;
+	}
+	.tituloRecetas {
+		font-size: 45px;
+	}
+//index//
+	.gridIndex {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 110px 1fr 1fr;
+		grid-template-areas: 
+        "titulo titulo" 
+        "principal principal" 
+        "secundaria terciaria";
+        .tituloRecetas{
+            font-size: 50px;
+        }
+        .prin {
+            width: 87%;
+            height: 350px;
+            margin-top: 2em;
+            img {
+                width: 400px;
+                height: 300px;
+            }
+        }
+        .seg {
+            width: 75%;
+            margin-top: 0px;
+            img {
+                width: 280px;
+                height: 200px;
+            }
+        }
+        .ter {
+            width: 75%;
+            margin-top: 0px;
+            img {
+                width: 280px;
+                height: 200px;
+            }
+        }
+	}
+//almuerzo//
+    .mainAlmuerzo{
+        h1{
+            font-size: 70px;
+        }
+    }
+    .padreCard {
+		h2 {
+			font-size: 30px;
+		}
+        .card {
+            height: 500px;
+        }
+	}
+	.gridAlmuerzo {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		justify-items: center;
+		grid-template-areas: 
+        "pollo caprese espinaca"
+        "ensalada wraps soufle"
+        "arrollado huevo brochetas";
+	}
+//cena//
+    .mainCena{
+        h1{
+            font-size: 70px;
+        }
+    }
+    .principalCena{
+        .textoCena{
+            font-size: 38px;
+        }
+        .principal {
+            display: flex;
+            flex-direction: row;
+            img {
+                width: 400px;
+                height: 300px;
+            }
+            .textoNoquis {
+                display: flex;
+                flex-direction: column;
+                padding-right: 1em;
+            }
+        }
+    }
+	.gridCena {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		justify-items: center;
+		margin-right: 1em;
+        margin-left: 1em;
+		grid-template-areas: 
+        "fideos milanesa horno"
+        "papas calabaza  pasta"
+        "empanada tacos noquis";
+	}
+//postres//
+    .mainPostre{
+        h1{
+            font-size: 70px;
+        }
+    }
+	.recetaPostre {
+		h2 {
+			font-size: 35px;
+		}
+        .contenedorCarousel {
+            img {
+                width: 570px;
+                height: 400px;
+            }
+            h3 {
+                width: 570px;
+            }
+        }
+	}
+    .reemplazos{
+        .fraseTips {
+            font-size: 30px;
+        }
+        .sustitutoL {
+            margin-right: 8em;
+            p {
+                font-size: 23px;
+            }
+        }
+        .sustitutoR {
+            margin-left: 8em;
+            p {
+                font-size: 23px;
+            }
+        }
+    }
+//footer//
+	.fraseFooter {
+		font-size: 35px;
+	}
+}
+
+@media (min-width:1070px) {
+//general//
+    .navbar-brand{
+        margin-left: 0.6em;
+    }
+	.tituloRecetas {
+		font-size: 45px;
+	}
+	.todasReceta {
+		font-size: 40px;
+	}
+	.contenedor {
+		img {
+			width: 330px;
+			height: 237px;
+		}
+	}
+//index//
+    .gridIndex{
+        .prin {
+            img {
+                width: 480px;
+                height: 307px;
+            }
+        }
+    }
+//almuerzo//
+    .mainAlmuerzo{
+        h1{
+            font-size: 90px;
+        }
+    }
+    .padreCard {
+        h2 {
+            font-size: 38px;
+        }
+        .card {
+            height: 600px;
+        }
+    }
+    .gridAlmuerzo {
+		margin-bottom: 3em;
+	}
+//cena//
+    .mainCena{
+        h1{
+            font-size: 90px;
+        }
+    }
+    .principalCena{
+        .principal {
+            img {
+                width: 600px;
+                height: 400px;
+            }
+        }
+        .textoNoquis {
+            padding-right: 1em;
+            h3 {
+                font-size: 30px;
+            }
+            h4 {
+                font-size: 20px;
+            }
+            ol {
+                font-size: 20px;
+            }
+        }
+    }
+//postre//
+    .mainPostre{
+        h1{
+            font-size: 90px;
+        }
+    }
+    .contenedorCarousel{
+        h3{
+            font-size: 30px;
+        }
+    }
+    .reemplazos{
+        .fraseTips{
+            p{
+                font-size: 33px;
+            }
+        }
+        .sustitutoL {
+            margin-right: 20em;
+            margin-bottom: 3em;
+            p{
+                font-size: 30px;
+            }
+        }
+        .sustitutoR {
+            margin-left: 20em;
+            margin-bottom: 3em;
+            p{
+                font-size: 30px;
+            }
+        }
+    }
+//usuario//
+	.form-box {
+		width: 50%;
+	}
+}

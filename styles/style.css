@@ -1,3 +1,904 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background: rgb(222, 208, 194);
+  background: linear-gradient(50deg, rgb(222, 208, 194) 0%, rgb(235, 231, 164) 38%, rgb(210, 246, 191) 100%);
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+body main {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background: #f8f9fa;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+body main h1 {
+  font-weight: bold;
+  font-size: 2.7em;
+  text-align: center;
+  color: #006600;
+}
+body main img {
+  width: 100%;
+}
+body .contenedor {
+  margin: 1em;
+  background: rgb(255, 255, 255);
+  border-radius: 0.4em;
+  box-shadow: 0.3em 0.3em 0.7em rgba(0, 0, 0, 0.0823529412);
+}
+body .todasReceta {
+  margin-top: 3em;
+  color: #006600;
+  font-weight: bold;
+  text-align: center;
+}
+
+ol li {
+  list-style-type: disc;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+ul li {
+  list-style-type: none;
+}
+
+header nav .navbar-brand {
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+  color: #006600;
+}
+header nav .navbar-brand img {
+  margin: 0.5em;
+}
+
+.btn-outline-success {
+  color: #006600;
+  border: #006600 0.1em solid;
+}
+.btn-outline-success:hover {
+  background-color: #006600;
+  color: white;
+}
+
+.container-fluid a:hover {
+  transition: 0.4s;
+  color: #e8b601;
+}
+
+footer {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  padding: 40px 10px 10px 10px;
+}
+footer .fraseFooter {
+  text-align: center;
+  font-weight: bold;
+  color: #006600;
+  font-size: 28px;
+  padding-bottom: 0.5em;
+}
+footer ul {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+footer .irArriba {
+  text-align: center;
+  text-decoration: none;
+  color: #006600;
+}
+footer .irArriba a:visited {
+  list-style: none;
+  color: #006600;
+}
+footer .irArriba a:hover {
+  transition: 0.4s;
+  color: #e8b601;
+}
+
+.icono {
+  transition: all 0.5s;
+}
+.icono:hover {
+  transform: scale(1.5);
+}
+
+.gridIndex {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  gap: 0.4em;
+  margin-bottom: 2em;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 1fr 1fr 1fr;
+  grid-template-areas: "titulo" "principal" "secundaria" "terciaria";
+}
+.gridIndex .tituloRecetas {
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center;
+  color: #006600;
+  margin-top: 40px;
+  grid-area: titulo;
+}
+.gridIndex .prin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: rgb(250, 250, 250) 0.2em solid;
+  border-radius: 0.3em;
+  grid-area: principal;
+}
+.gridIndex .prin h3 {
+  text-align: center;
+  font-weight: bold;
+}
+.gridIndex .prin h4 {
+  text-align: center;
+  font-weight: bold;
+}
+.gridIndex .prin ol li {
+  margin-left: 1.5em;
+}
+.gridIndex .prin img {
+  padding: 0.7em;
+  border-radius: 1em;
+}
+.gridIndex .prin:hover {
+  border: #006600 0.2em solid;
+}
+.gridIndex .seg {
+  grid-area: secundaria;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: rgb(250, 250, 250) 0.2em solid;
+  border-radius: 0.3em;
+}
+.gridIndex .seg h3 {
+  font-weight: bold;
+}
+.gridIndex .seg h4 {
+  font-weight: bold;
+}
+.gridIndex .seg img {
+  padding: 0.7em;
+  border-radius: 1em;
+}
+.gridIndex .seg:hover {
+  border: #006600 0.2em solid;
+}
+.gridIndex .ter {
+  grid-area: terciaria;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: rgb(250, 250, 250) 0.2em solid;
+  border-radius: 0.3em;
+}
+.gridIndex .ter h3 {
+  font-weight: bold;
+}
+.gridIndex .ter h4 {
+  font-weight: bold;
+}
+.gridIndex .ter img {
+  padding: 0.7em;
+  border-radius: 1em;
+}
+.gridIndex .ter:hover {
+  border: #006600 0.2em solid;
+}
+
+.padreCard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.padreCard div {
+  align-items: center;
+  justify-content: center;
+}
+.padreCard h2 {
+  width: 90%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: #666 3px 1px 5px;
+}
+
+.card {
+  width: 95%;
+  height: 250px;
+  background: white;
+  border-radius: 10px;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.shadow {
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(190, 190, 190), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+iframe {
+  border-radius: 0.5em;
+}
+
+.pollo {
+  grid-area: pollo;
+}
+
+.espinaca {
+  grid-area: espinaca;
+}
+
+.caprese {
+  grid-area: caprese;
+}
+
+.ensalada {
+  grid-area: ensalada;
+}
+
+.wraps {
+  grid-area: wraps;
+}
+
+.souffle {
+  grid-area: soufle;
+}
+
+.arrollado {
+  grid-area: arrollado;
+}
+
+.huevo {
+  grid-area: huevo;
+}
+
+.brochetas {
+  grid-area: brochetas;
+}
+
+.gridAlmuerzo {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  gap: 0.4em;
+  margin-bottom: 1.5em;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "pollo" "caprese" "espinaca" "ensalada" "wraps" "soufle" "arrollado" "huevo" "brochetas";
+}
+.gridAlmuerzo .cuarta {
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: rgb(250, 250, 250) 0.2em solid;
+  border-radius: 0.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gridAlmuerzo .cuarta img {
+  padding: 0.7em;
+  border-radius: 1em;
+}
+.gridAlmuerzo .cuarta:hover {
+  border: #006600 0.2em solid;
+}
+.gridAlmuerzo .cuarta h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.principalCena {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.principalCena .textoCena {
+  margin-top: 2em;
+  color: #006600;
+  font-weight: bold;
+  text-align: center;
+}
+.principalCena .principal {
+  width: fit-content;
+  border: rgb(250, 250, 250) 0.2em solid;
+  border-radius: 0.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.principalCena .principal img {
+  padding: 0.7em;
+  border-radius: 1em;
+}
+.principalCena .principal h3 {
+  text-align: center;
+  font-weight: bold;
+}
+.principalCena .principal h4 {
+  text-align: center;
+  font-weight: bold;
+}
+.principalCena .principal ol li {
+  margin-left: 3em;
+}
+
+.fideos {
+  grid-area: fideos;
+}
+
+.milanesa {
+  grid-area: milanesa;
+}
+
+.polloHorno {
+  grid-area: horno;
+}
+
+.papas {
+  grid-area: papas;
+}
+
+.calabaza {
+  grid-area: calabaza;
+}
+
+.pasta {
+  grid-area: pasta;
+}
+
+.empanadas {
+  grid-area: empanada;
+}
+
+.tacos {
+  grid-area: tacos;
+}
+
+.gridCena {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  gap: 0.4em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "fideos" "milanesa" "horno" "papas" "calabaza" "pasta" "empanada" "tacos";
+}
+.gridCena .cuarta {
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: rgb(250, 250, 250) 0.2em solid;
+  border-radius: 0.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gridCena .cuarta img {
+  padding: 0.7em;
+  border-radius: 1em;
+}
+.gridCena .cuarta:hover {
+  border: #006600 0.2em solid;
+}
+.gridCena .cuarta h3 {
+  font-weight: bold;
+}
+
+.recetaPostre h2 {
+  color: #006600;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2em;
+}
+.recetaPostre .contenedorCarousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3em;
+}
+.recetaPostre .contenedorCarousel img {
+  width: 300px;
+  height: 180px;
+}
+.recetaPostre .contenedorCarousel h3 {
+  background-color: white;
+  width: 300px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.reemplazos {
+  margin-bottom: 3em;
+}
+.reemplazos .fraseTips {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.reemplazos .fraseTips p {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 2em;
+  margin-right: 2em;
+  text-shadow: #666 3px 1px 5px;
+}
+.reemplazos .sustitutoL {
+  background-color: white;
+  margin-right: 4em;
+  text-align: left;
+  border-top-right-radius: 10em;
+  border-bottom-right-radius: 10em;
+}
+.reemplazos .sustitutoL p {
+  padding: 1em 1em;
+}
+.reemplazos .sustitutoR {
+  background-color: white;
+  margin-left: 4em;
+  text-align: right;
+  border-top-left-radius: 10em;
+  border-bottom-left-radius: 10em;
+}
+.reemplazos .sustitutoR p {
+  padding: 1em 1em;
+}
+
+.formularioRegistro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.form-box {
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  width: 80%;
+  background: #ffffff;
+  overflow: hidden;
+  border-radius: 16px;
+  color: #010101;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.form-box .form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 24px;
+  gap: 16px;
+  text-align: center;
+}
+.form-box .form .title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #006600;
+}
+.form-box .form .subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+.form-box .form .form-container {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: white;
+  margin: 1rem 0 0.5rem;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.form-box .form .form-container .input {
+  background: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  width: 85%;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+  padding: 8px 15px;
+}
+.form-box .form button {
+  background-color: #006600;
+  color: white;
+  border: 0;
+  border-radius: 24px;
+  width: 80%;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form-box .form button:hover {
+  background-color: #e8b601;
+}
+.form-box .form .crearCuenta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-box .form-section {
+  padding: 16px;
+  font-size: 0.85rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.08) 0 -1px;
+}
+.form-box .form-section a {
+  font-weight: bold;
+  color: #006600;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+.form-box .form-section a:hover {
+  color: #e8b601;
+  text-decoration: none;
+}
+.form-box .form-section p {
+  text-align: center;
+}
+
+@media (min-width: 550px) {
+  .todasReceta {
+    font-size: 30px;
+  }
+  .contenedor {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .gridIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 120px 1fr 1fr;
+    justify-items: center;
+    grid-template-areas: "titulo titulo" "principal principal" "secundaria terciaria";
+  }
+  .gridIndex .tituloRecetas {
+    width: 100%;
+    margin-top: 70px;
+    font-size: 40px;
+  }
+  .gridIndex .prin {
+    display: flex;
+    flex-direction: row;
+    width: 86%;
+    justify-content: space-evenly;
+  }
+  .gridIndex .prin img {
+    width: 300px;
+    height: 220px;
+  }
+  .gridIndex .prin div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 0.5em;
+  }
+  .gridIndex .seg img {
+    width: 220px;
+    height: 157px;
+  }
+  .gridIndex .seg h4 {
+    text-align: center;
+  }
+  .gridIndex .ter img {
+    width: 220px;
+    height: 157px;
+  }
+  .gridIndex .ter h4 {
+    text-align: center;
+  }
+  .mainAlmuerzo h1 {
+    font-size: 60px;
+  }
+  .padreCard h2 {
+    font-size: 25px;
+    margin-top: 2em;
+  }
+  .padreCard .card {
+    height: 400px;
+  }
+  .gridAlmuerzo {
+    margin-top: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "pollo caprese" "espinaca ensalada" "wraps soufle" "arrollado huevo" "brochetas brochetas";
+  }
+  .gridAlmuerzo img {
+    width: 220px;
+    height: 157px;
+  }
+  .mainCena h1 {
+    font-size: 60px;
+  }
+  .principalCena {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .principalCena .textoCena {
+    font-size: 30px;
+  }
+  .principalCena .principal {
+    flex-direction: row;
+  }
+  .principalCena .principal img {
+    width: 250px;
+    height: 177px;
+  }
+  .principalCena .principal .textoNoquis {
+    margin-top: 1em;
+    margin-right: 1em;
+  }
+  .gridCena {
+    display: grid;
+    margin-top: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-template-areas: "fideos milanesa" "horno papas" "calabaza pasta" "empanada tacos" "noquis noquis";
+  }
+  .gridCena img {
+    width: 220px;
+    height: 157px;
+  }
+  .gridCena h3 {
+    text-align: center;
+  }
+  .mainPostre h1 {
+    font-size: 60px;
+  }
+  .recetaPostre h2 {
+    font-size: 30px;
+    margin-bottom: 0.5em;
+  }
+  .recetaPostre .contenedorCarousel {
+    margin-bottom: 5em;
+  }
+  .recetaPostre .contenedorCarousel img {
+    width: 480px;
+    height: 350px;
+  }
+  .recetaPostre .contenedorCarousel h3 {
+    width: 480px;
+    font-size: 25px;
+  }
+  .reemplazos .fraseTips p {
+    font-size: 25px;
+  }
+  .reemplazos .sustitutoL {
+    margin-right: 6em;
+  }
+  .reemplazos .sustitutoL p {
+    font-size: 20px;
+  }
+  .reemplazos .sustitutoR {
+    margin-left: 6em;
+  }
+  .reemplazos .sustitutoR p {
+    font-size: 20px;
+  }
+  .fraseFooter {
+    font-size: 35px;
+    margin-top: 0.4em;
+  }
+}
+@media (min-width: 770px) {
+  .todasReceta {
+    font-size: 35px;
+  }
+  .tituloRecetas {
+    font-size: 45px;
+  }
+  .gridIndex {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 110px 1fr 1fr;
+    grid-template-areas: "titulo titulo" "principal principal" "secundaria terciaria";
+  }
+  .gridIndex .tituloRecetas {
+    font-size: 50px;
+  }
+  .gridIndex .prin {
+    width: 87%;
+    height: 350px;
+    margin-top: 2em;
+  }
+  .gridIndex .prin img {
+    width: 400px;
+    height: 300px;
+  }
+  .gridIndex .seg {
+    width: 75%;
+    margin-top: 0px;
+  }
+  .gridIndex .seg img {
+    width: 280px;
+    height: 200px;
+  }
+  .gridIndex .ter {
+    width: 75%;
+    margin-top: 0px;
+  }
+  .gridIndex .ter img {
+    width: 280px;
+    height: 200px;
+  }
+  .mainAlmuerzo h1 {
+    font-size: 70px;
+  }
+  .padreCard h2 {
+    font-size: 30px;
+  }
+  .padreCard .card {
+    height: 500px;
+  }
+  .gridAlmuerzo {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    grid-template-areas: "pollo caprese espinaca" "ensalada wraps soufle" "arrollado huevo brochetas";
+  }
+  .mainCena h1 {
+    font-size: 70px;
+  }
+  .principalCena .textoCena {
+    font-size: 38px;
+  }
+  .principalCena .principal {
+    display: flex;
+    flex-direction: row;
+  }
+  .principalCena .principal img {
+    width: 400px;
+    height: 300px;
+  }
+  .principalCena .principal .textoNoquis {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1em;
+  }
+  .gridCena {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-right: 1em;
+    margin-left: 1em;
+    grid-template-areas: "fideos milanesa horno" "papas calabaza  pasta" "empanada tacos noquis";
+  }
+  .mainPostre h1 {
+    font-size: 70px;
+  }
+  .recetaPostre h2 {
+    font-size: 35px;
+  }
+  .recetaPostre .contenedorCarousel img {
+    width: 570px;
+    height: 400px;
+  }
+  .recetaPostre .contenedorCarousel h3 {
+    width: 570px;
+  }
+  .reemplazos .fraseTips {
+    font-size: 30px;
+  }
+  .reemplazos .sustitutoL {
+    margin-right: 8em;
+  }
+  .reemplazos .sustitutoL p {
+    font-size: 23px;
+  }
+  .reemplazos .sustitutoR {
+    margin-left: 8em;
+  }
+  .reemplazos .sustitutoR p {
+    font-size: 23px;
+  }
+  .fraseFooter {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1070px) {
+  .navbar-brand {
+    margin-left: 0.6em;
+  }
+  .tituloRecetas {
+    font-size: 45px;
+  }
+  .todasReceta {
+    font-size: 40px;
+  }
+  .contenedor img {
+    width: 330px;
+    height: 237px;
+  }
+  .gridIndex .prin img {
+    width: 480px;
+    height: 307px;
+  }
+  .mainAlmuerzo h1 {
+    font-size: 90px;
+  }
+  .padreCard h2 {
+    font-size: 38px;
+  }
+  .padreCard .card {
+    height: 600px;
+  }
+  .gridAlmuerzo {
+    margin-bottom: 3em;
+  }
+  .mainCena h1 {
+    font-size: 90px;
+  }
+  .principalCena .principal img {
+    width: 600px;
+    height: 400px;
+  }
+  .principalCena .textoNoquis {
+    padding-right: 1em;
+  }
+  .principalCena .textoNoquis h3 {
+    font-size: 30px;
+  }
+  .principalCena .textoNoquis h4 {
+    font-size: 20px;
+  }
+  .principalCena .textoNoquis ol {
+    font-size: 20px;
+  }
+  .mainPostre h1 {
+    font-size: 90px;
+  }
+  .contenedorCarousel h3 {
+    font-size: 30px;
+  }
+  .reemplazos .fraseTips p {
+    font-size: 33px;
+  }
+  .reemplazos .sustitutoL {
+    margin-right: 20em;
+    margin-bottom: 3em;
+  }
+  .reemplazos .sustitutoL p {
+    font-size: 30px;
+  }
+  .reemplazos .sustitutoR {
+    margin-left: 20em;
+    margin-bottom: 3em;
+  }
+  .reemplazos .sustitutoR p {
+    font-size: 30px;
+  }
+  .form-box {
+    width: 50%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+	background: rgb(222,208,194);
+	background: linear-gradient(50deg, rgba(222,208,194,1) 0%, rgba(235,231,164,1) 38%, rgba(210,246,191,1) 100%);
+	font-family: $tipografia;
+	overflow-x: hidden;
+    main {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        background: #f8f9fa;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        h1 {
+            font-weight: bold;
+            font-size: 2.7em;
+            text-align: center;
+            color: $verde;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .contenedor {
+            margin: 1em;
+            background: rgb(255, 255, 255);
+            border-radius: 0.4em;
+            box-shadow: 0.3em 0.3em 0.7em #00000015;
+    }
+    .todasReceta {
+        margin-top: 3em;
+        color: $verde;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+ol li{
+    list-style-type:disc;
+}
+ul {
+	li {
+		list-style-type: none;
+	}
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}

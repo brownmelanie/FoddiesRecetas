@@ -1,0 +1,16 @@
+//mixin sin parametro
+@mixin titutloNav{
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    color: $verde;
+}
+
+//mixin con parametro
+@mixin flex ($align, $wrap, $justify, $flex){
+    display: flex;
+    align-content: $align;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    flex-direction: $flex;
+}

@@ -1,0 +1,93 @@
+.formularioRegistro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+.form-box {
+	background: rgb(236, 236, 236);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	width: 80%;
+	background: #ffffff;
+	overflow: hidden;
+	border-radius: 16px;
+	color: $negro;
+	margin-top: 4%;
+	margin-bottom: 4%;
+    .form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 32px 24px 24px;
+        gap: 16px;
+        text-align: center;
+        .title {
+            font-weight: bold;
+            font-size: 1.6rem;
+            color: $verde;
+        }
+        .subtitle {
+            font-size: 1rem;
+            color: $gris;
+        }
+        .form-container {
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: $background-blanco;
+            margin: 1rem 0 .5rem;
+            width: 100%;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            .input {
+                background: none;
+                border: 0;
+                outline: 0;
+                height: 40px;
+                width: 85%;
+                border-bottom: 1px solid #eee;
+                font-size: .9rem;
+                padding: 8px 15px;
+            }
+        }
+        button {
+            background-color: $background-verde;
+            color: $blanco;
+            border: 0;
+            border-radius: 24px;
+            width: 80%;
+            padding: 10px 16px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color .3s ease;
+            &:hover {
+                background-color: $background-amarillo;
+            }
+        }
+        .crearCuenta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .form-section {
+        padding: 16px;
+        font-size: .85rem;
+        background-color: $background-blanco;
+        box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+        a {
+            font-weight: bold;
+            color: $verde;
+            transition: color .3s ease;
+            text-decoration: none;
+            &:hover {
+                color: $amarillo;
+                text-decoration: none;
+            }
+        }
+        p {
+            text-align: center;
+        }
+    }
+}

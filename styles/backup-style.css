@@ -660,15 +660,6 @@ ul{
         width: 220px;
         height: 157px;
     }
-    .gridPostreprin{
-        margin-top: 0px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
-        grid-template-areas:
-        "licuado licuado"
-        "zanahoria muffin";
-    }
     .fraseFooter{
         margin-top: 0.4em;
     }

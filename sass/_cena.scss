@@ -1,0 +1,89 @@
+.principalCena {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    .textoCena{
+        margin-top: 2em;
+        color: #006600;
+        font-weight: bold;
+        text-align: center;
+    }
+    .principal {
+        width: fit-content;
+        border: rgb(250, 250, 250) 0.2em solid;
+        border-radius: 0.3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            padding: 0.7em;
+            border-radius: 1em;
+        }
+        h3{
+            text-align: center;
+            font-weight: bold;
+        }
+        h4{
+            text-align: center;
+            font-weight: bold;
+        }
+        ol{
+            li{
+                margin-left: 3em;
+            }
+        }
+    }
+}
+.fideos {
+	grid-area: fideos;
+}
+.milanesa {
+	grid-area: milanesa;
+}
+.polloHorno {
+	grid-area: horno;
+}
+.papas {
+	grid-area: papas;
+}
+.calabaza {
+	grid-area: calabaza;
+}
+.pasta {
+	grid-area: pasta;
+}
+.empanadas {
+	grid-area: empanada;
+}
+.tacos {
+	grid-area: tacos;
+}
+.gridCena {
+	display: grid;
+	justify-items: center;
+	justify-content: center;
+	gap: 0.4em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: "fideos" "milanesa" "horno" "papas" "calabaza" "pasta" "empanada" "tacos";
+    .cuarta {
+        transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: rgb(250, 250, 250) 0.2em solid;
+        border-radius: 0.3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            padding: 0.7em;
+            border-radius: 1em;
+        }
+        &:hover {
+            border: #006600 0.2em solid;
+        }
+        h3{
+            font-weight: bold;
+        }
+    }
+}

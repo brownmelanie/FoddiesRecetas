@@ -1,0 +1,95 @@
+.gridIndex {
+	display: grid;
+	justify-items: center;
+	justify-content: center;
+	gap: 0.4em;
+	margin-bottom: 2em;
+	grid-template-columns: 1fr;
+	grid-template-rows: 70px 1fr 1fr 1fr;
+	grid-template-areas: 
+    "titulo"
+    "principal"
+    "secundaria"
+    "terciaria";
+    .tituloRecetas {
+        font-size: 27px;
+        font-weight: bold;
+        text-align: center;
+        color: $verde;
+        margin-top: 40px;
+        grid-area: titulo;
+    }
+    .prin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: rgb(250, 250, 250) 0.2em solid;
+        border-radius: 0.3em;
+        grid-area: principal;
+        h3{
+            text-align: center;
+            font-weight: bold;
+        }
+        h4{
+            text-align: center;
+            font-weight: bold;
+        }
+        ol{
+            li{
+                margin-left: 1.5em;
+            }
+        }
+        img {
+            padding: 0.7em;
+            border-radius: 1em;
+        }
+        &:hover {
+            border: #006600 0.2em solid;
+        }
+    }
+    .seg {
+        grid-area: secundaria;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: rgb(250, 250, 250) 0.2em solid;
+        border-radius: 0.3em;
+        h3{
+            font-weight: bold;
+        }
+        h4{
+            font-weight: bold;
+        }
+        img {
+            padding: 0.7em;
+            border-radius: 1em;
+        }
+        &:hover {
+            border: #006600 0.2em solid;
+        }
+    }
+    .ter {
+        grid-area: terciaria;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: rgb(250, 250, 250) 0.2em solid;
+        border-radius: 0.3em;
+        h3{
+            font-weight: bold;
+        }
+        h4{
+            font-weight: bold;
+        }
+        img {
+            padding: 0.7em;
+            border-radius: 1em;
+        }
+        &:hover {
+            border: #006600 0.2em solid;
+        }
+    }
+}

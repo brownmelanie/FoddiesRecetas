@@ -1,0 +1,63 @@
+.recetaPostre {
+	h2 {
+		color: $verde;
+		text-align: center;
+		font-weight: bold;
+		margin-top: 2em;
+	}
+    .contenedorCarousel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 3em;
+	    img {
+		    width: 300px;
+		    height: 180px;
+	    }
+	    h3 {
+		    background-color: $background-blanco;
+		    width: 300px;
+            text-align: center;
+            font-weight: bold;
+	    }
+    }
+}
+.reemplazos {
+	margin-bottom: 3em;
+    .fraseTips {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        p {
+            color: $blanco;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            margin-left: 2em;
+            margin-right: 2em;
+            text-shadow: #666 3px 1px 5px;
+        }
+    }
+    .sustitutoL {
+        background-color: $background-blanco;
+        margin-right: 4em;
+        text-align: left;
+        border-top-right-radius: 10em;
+        border-bottom-right-radius: 10em;
+        p {
+            padding: 1em 1em;
+        }
+    }
+    .sustitutoR {
+        background-color: $background-blanco;
+        margin-left: 4em;
+        text-align: right;
+        border-top-left-radius: 10em;
+        border-bottom-left-radius: 10em;
+        p {
+            padding: 1em 1em;
+        }
+    }
+}

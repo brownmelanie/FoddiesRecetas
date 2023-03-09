@@ -1,0 +1,38 @@
+
+footer {
+	background-color: $background-blanco;
+	font-family: $tipografia;
+	font-weight: lighter;
+	padding: 40px 10px 10px 10px;
+    .fraseFooter {
+        text-align: center;
+        font-weight: bold;
+        color: $verde;
+        font-size: 28px;
+        padding-bottom: 0.5em;
+    }
+	ul{
+		@include flex (center, wrap, space-evenly, row)
+	}
+	.irArriba {
+		a {
+			&:visited {
+				list-style: none;
+				color: $verde;
+			}
+			&:hover {
+				transition: 0.4s;
+				color: $amarillo;
+			}
+		}
+		text-align: center;
+		text-decoration: none;
+		color: $verde;
+	}
+}
+.icono {
+	transition: all 0.5s;
+	&:hover {
+		transform: scale(1.5);
+	}
+}

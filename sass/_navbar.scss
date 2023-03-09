@@ -1,0 +1,26 @@
+header{
+	nav{
+        .navbar-brand {
+			@include titutloNav;
+		img {
+			margin: 0.5em;
+		}
+	    }
+    }
+}
+.btn-outline-success {
+	color: $verde;
+	border: #006600 0.1em solid;
+	&:hover {
+		background-color: $background-verde;
+		color: $blanco;
+	}
+}
+.container-fluid {
+	a {
+		&:hover {
+			transition: 0.4s;
+			color: $amarillo;
+		}
+	}
+}
