@@ -79,34 +79,16 @@ footer {
   background-color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
-  padding: 40px 10px 10px 10px;
-}
-footer .fraseFooter {
-  text-align: center;
-  font-weight: bold;
-  color: #006600;
-  font-size: 28px;
-  padding-bottom: 0.5em;
+  padding: 10px 10px 10px 10px;
 }
 footer ul {
+  padding: 0.5em 0px;
+  margin-bottom: 0px;
   display: flex;
   align-content: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
   flex-direction: row;
-}
-footer .irArriba {
-  text-align: center;
-  text-decoration: none;
-  color: #006600;
-}
-footer .irArriba a:visited {
-  list-style: none;
-  color: #006600;
-}
-footer .irArriba a:hover {
-  transition: 0.4s;
-  color: #e8b601;
 }
 
 .icono {
@@ -217,7 +199,7 @@ footer .irArriba a:hover {
   align-items: center;
   justify-content: center;
 }
-.padreCard h2 {
+.padreCard h3 {
   width: 90%;
   margin-top: 2em;
   margin-bottom: 1em;
