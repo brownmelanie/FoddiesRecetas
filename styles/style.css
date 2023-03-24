@@ -567,7 +567,7 @@ iframe {
   align-items: center;
 }
 .form-box .form-section {
-  padding: 16px;
+  padding-bottom: 16px;
   font-size: 0.85rem;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.08) 0 -1px;
@@ -997,8 +997,11 @@ iframe {
   .contenedorCarousel h3 {
     font-size: 30px;
   }
-  .form-box {
-    width: 50%;
+  .formularioRegistro {
+    height: 90%;
+  }
+  .formularioRegistro .form-box {
+    width: 60%;
   }
 }
 
