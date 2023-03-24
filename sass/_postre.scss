@@ -1,63 +1,74 @@
 .recetaPostre {
-	h2 {
-		color: $verde;
-		text-align: center;
-		font-weight: bold;
-		margin-top: 2em;
-	}
-    .contenedorCarousel {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 3em;
-	    img {
-		    width: 300px;
-		    height: 180px;
-	    }
-	    h3 {
-		    background-color: $background-blanco;
-		    width: 300px;
-            text-align: center;
-            font-weight: bold;
-	    }
-    }
+		margin-top: 3em;
 }
-.reemplazos {
-	margin-bottom: 3em;
-    .fraseTips {
+.receta{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3{
+        color: $verde;
+        font-weight: bold;
+        font-size: 25px;
+        padding-top: 0.5em;
+    }
+    h4{
+        font-weight: 500;
+        font-size: 20px;
+        padding-bottom: 1em;
+    }
+    img{
+        border-radius: 50%;
+        height: 170px;
+        width: 170px;
+    }
+    .dificultad{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 1em;
-        margin-top: 1em;
-        p {
-            color: $blanco;
-            font-weight: bold;
-            font-size: 20px;
-            text-align: center;
-            margin-left: 2em;
-            margin-right: 2em;
-            text-shadow: #666 3px 1px 5px;
-        }
-    }
-    .sustitutoL {
-        background-color: $background-blanco;
-        margin-right: 4em;
-        text-align: left;
-        border-top-right-radius: 10em;
-        border-bottom-right-radius: 10em;
-        p {
-            padding: 1em 1em;
-        }
-    }
-    .sustitutoR {
-        background-color: $background-blanco;
-        margin-left: 4em;
-        text-align: right;
-        border-top-left-radius: 10em;
-        border-bottom-left-radius: 10em;
-        p {
-            padding: 1em 1em;
+        flex-direction: row;
+        p{
+            text-transform: uppercase;
+            letter-spacing: 0.0005rem;
+            padding: 0.5em 0.7em;
+            color: rgb(82, 82, 82);
+            font-weight: 200;
         }
     }
 }
+.unoPostre{
+    background-color: $background-blanco;
+}
+.dosPostre{
+    background-color: #497c49;
+    h3{
+        color: $amarillo;
+    }
+    h4{
+        color: $blanco;
+    }
+    ol{
+        color: $blanco;
+    }
+    .dificultad{
+        p{
+            color: rgb(201, 201, 201);
+        }
+    }
+}
+.contenedorCarousel {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 3em;
+    img {
+	    width: 300px;
+	    height: 180px;
+    }
+    h3 {
+	    background-color: $background-blanco;
+	    width: 300px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+

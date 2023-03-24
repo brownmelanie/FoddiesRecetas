@@ -12,7 +12,7 @@ body {
 }
 body main {
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   background: #f8f9fa;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -32,7 +32,7 @@ body .contenedor {
   box-shadow: 0.3em 0.3em 0.7em rgba(0, 0, 0, 0.0823529412);
 }
 body .todasReceta {
-  margin-top: 3em;
+  margin: 3em 1.5em 1em;
   color: #006600;
   font-weight: bold;
   text-align: center;
@@ -55,22 +55,24 @@ header nav .navbar-brand {
   font-weight: bold;
   font-size: 22px;
   text-decoration: none;
+  margin-right: 0px;
   color: #006600;
 }
 header nav .navbar-brand img {
   margin: 0.5em;
 }
-
-.btn-outline-success {
+header nav .navbar-toggler {
+  border: none;
+}
+header nav .btn-outline-success {
   color: #006600;
   border: #006600 0.1em solid;
 }
-.btn-outline-success:hover {
+header nav .btn-outline-success:hover {
   background-color: #006600;
   color: white;
 }
-
-.container-fluid a:hover {
+header nav .container-fluid a:hover {
   transition: 0.4s;
   color: #e8b601;
 }
@@ -98,97 +100,110 @@ footer ul {
   transform: scale(1.5);
 }
 
-.gridIndex {
-  display: grid;
-  justify-items: center;
+.fraseFoddies {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.377), rgba(5, 7, 12, 0.37)), url(../img/veggies.webp);
+  height: 85vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 0.4em;
-  margin-bottom: 2em;
-  grid-template-columns: 1fr;
-  grid-template-rows: 70px 1fr 1fr 1fr;
-  grid-template-areas: "titulo" "principal" "secundaria" "terciaria";
 }
-.gridIndex .tituloRecetas {
-  font-size: 27px;
+.fraseFoddies h2 {
+  color: white;
   font-weight: bold;
+  font-size: 2em;
   text-align: center;
+  padding: 2em 1em;
+}
+.fraseFoddies h3 {
+  color: white;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 0px 1em 2em 1em;
+}
+
+.consejosIndex {
+  padding: 2em 0px 2em;
+}
+.consejosIndex .index {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.consejosIndex .index h4 {
+  font-weight: bold;
+  color: #252525;
+  padding-top: 0.5em;
+}
+
+.opiniones {
+  background-color: white;
+  margin-bottom: 0.1em;
+  box-shadow: 0px -3px 14px -4px rgba(0, 0, 0, 0.48);
+}
+.opiniones h4 {
   color: #006600;
-  margin-top: 40px;
-  grid-area: titulo;
-}
-.gridIndex .prin {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border: rgb(250, 250, 250) 0.2em solid;
-  border-radius: 0.3em;
-  grid-area: principal;
-}
-.gridIndex .prin h3 {
+  font-weight: bold;
   text-align: center;
-  font-weight: bold;
+  padding: 1em 1em 0px;
 }
-.gridIndex .prin h4 {
+.opiniones .cardIndex {
+  height: 250px;
+  background-color: white;
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.opiniones .cardIndex .card-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #006600;
+  background-position: center;
+  background-size: contain;
+}
+.opiniones .card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5em 1rem 0px;
+}
+.opiniones .card-info .text-body {
+  width: 200px;
+  font-size: 0.9em;
   text-align: center;
-  font-weight: bold;
+  color: #5f5f5f;
+  font-style: italic;
 }
-.gridIndex .prin ol li {
-  margin-left: 1.5em;
+.opiniones .card-info .text-title {
+  text-transform: uppercase;
+  font-size: 1.3em;
+  color: #006600;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.5em;
+  font-weight: 500;
 }
-.gridIndex .prin img {
-  padding: 0.7em;
-  border-radius: 1em;
+
+.uno {
+  background-image: url(../img/personUno.png);
 }
-.gridIndex .prin:hover {
-  border: #006600 0.2em solid;
+
+.dos {
+  background-image: url(../img/personaDos.png);
 }
-.gridIndex .seg {
-  grid-area: secundaria;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border: rgb(250, 250, 250) 0.2em solid;
-  border-radius: 0.3em;
-}
-.gridIndex .seg h3 {
-  font-weight: bold;
-}
-.gridIndex .seg h4 {
-  font-weight: bold;
-}
-.gridIndex .seg img {
-  padding: 0.7em;
-  border-radius: 1em;
-}
-.gridIndex .seg:hover {
-  border: #006600 0.2em solid;
-}
-.gridIndex .ter {
-  grid-area: terciaria;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border: rgb(250, 250, 250) 0.2em solid;
-  border-radius: 0.3em;
-}
-.gridIndex .ter h3 {
-  font-weight: bold;
-}
-.gridIndex .ter h4 {
-  font-weight: bold;
-}
-.gridIndex .ter img {
-  padding: 0.7em;
-  border-radius: 1em;
-}
-.gridIndex .ter:hover {
-  border: #006600 0.2em solid;
+
+.tres {
+  background-image: url(../img/personaTres.png);
 }
 
 .padreCard {
+  background-color: white;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -199,14 +214,12 @@ footer ul {
   align-items: center;
   justify-content: center;
 }
-.padreCard h3 {
+.padreCard p {
   width: 90%;
   margin-top: 2em;
   margin-bottom: 1em;
-  color: white;
-  font-weight: bold;
+  color: #006600;
   font-size: 20px;
-  text-shadow: #666 3px 1px 5px;
 }
 
 .card {
@@ -214,7 +227,7 @@ footer ul {
   height: 250px;
   background: white;
   border-radius: 10px;
-  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-bottom: 3em;
 }
 
 .shadow {
@@ -296,35 +309,42 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #497c49;
 }
 .principalCena .textoCena {
   margin-top: 2em;
-  color: #006600;
+  color: #e8b601;
   font-weight: bold;
   text-align: center;
+  padding: 0em 1em 1em;
+  font-size: 29px;
 }
-.principalCena .principal {
-  width: fit-content;
-  border: rgb(250, 250, 250) 0.2em solid;
-  border-radius: 0.3em;
+.principalCena img {
+  border-radius: 50%;
+  padding-bottom: 1em;
+}
+.principalCena .textoPizza {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.principalCena .principal img {
-  padding: 0.7em;
-  border-radius: 1em;
-}
-.principalCena .principal h3 {
-  text-align: center;
+.principalCena .textoPizza h3 {
   font-weight: bold;
+  color: white;
+  font-size: 27px;
+  padding-bottom: 1em;
 }
-.principalCena .principal h4 {
-  text-align: center;
-  font-weight: bold;
+.principalCena .textoPizza h4 {
+  font-weight: 500;
+  color: white;
 }
-.principalCena .principal ol li {
-  margin-left: 3em;
+.principalCena .textoPizza ol {
+  color: white;
+  font-size: 18px;
+  padding-bottom: 2em;
+}
+.principalCena .recetaCompleta {
+  display: none;
 }
 
 .fideos {
@@ -359,6 +379,10 @@ iframe {
   grid-area: tacos;
 }
 
+.noquis {
+  grid-area: noquis;
+}
+
 .gridCena {
   display: grid;
   justify-items: center;
@@ -367,8 +391,8 @@ iframe {
   margin-top: 1em;
   margin-bottom: 2em;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "fideos" "milanesa" "horno" "papas" "calabaza" "pasta" "empanada" "tacos";
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "fideos" "milanesa" "horno" "papas" "calabaza" "pasta" "empanada" "tacos" "noquis";
 }
 .gridCena .cuarta {
   transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -389,73 +413,88 @@ iframe {
   font-weight: bold;
 }
 
-.recetaPostre h2 {
-  color: #006600;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 2em;
+.recetaPostre {
+  margin-top: 3em;
 }
-.recetaPostre .contenedorCarousel {
+
+.receta {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.receta h3 {
+  color: #006600;
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 0.5em;
+}
+.receta h4 {
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: 1em;
+}
+.receta img {
+  border-radius: 50%;
+  height: 170px;
+  width: 170px;
+}
+.receta .dificultad {
+  display: flex;
+  flex-direction: row;
+}
+.receta .dificultad p {
+  text-transform: uppercase;
+  letter-spacing: 0.0005rem;
+  padding: 0.5em 0.7em;
+  color: rgb(82, 82, 82);
+  font-weight: 200;
+}
+
+.unoPostre {
+  background-color: white;
+}
+
+.dosPostre {
+  background-color: #497c49;
+}
+.dosPostre h3 {
+  color: #e8b601;
+}
+.dosPostre h4 {
+  color: white;
+}
+.dosPostre ol {
+  color: white;
+}
+.dosPostre .dificultad p {
+  color: rgb(201, 201, 201);
+}
+
+.contenedorCarousel {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 3em;
 }
-.recetaPostre .contenedorCarousel img {
+.contenedorCarousel img {
   width: 300px;
   height: 180px;
 }
-.recetaPostre .contenedorCarousel h3 {
+.contenedorCarousel h3 {
   background-color: white;
   width: 300px;
   text-align: center;
   font-weight: bold;
 }
 
-.reemplazos {
-  margin-bottom: 3em;
-}
-.reemplazos .fraseTips {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1em;
-  margin-top: 1em;
-}
-.reemplazos .fraseTips p {
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  margin-left: 2em;
-  margin-right: 2em;
-  text-shadow: #666 3px 1px 5px;
-}
-.reemplazos .sustitutoL {
-  background-color: white;
-  margin-right: 4em;
-  text-align: left;
-  border-top-right-radius: 10em;
-  border-bottom-right-radius: 10em;
-}
-.reemplazos .sustitutoL p {
-  padding: 1em 1em;
-}
-.reemplazos .sustitutoR {
-  background-color: white;
-  margin-left: 4em;
-  text-align: right;
-  border-top-left-radius: 10em;
-  border-bottom-left-radius: 10em;
-}
-.reemplazos .sustitutoR p {
-  padding: 1em 1em;
-}
-
 .formularioRegistro {
+  height: 74vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
@@ -555,47 +594,19 @@ iframe {
     margin-left: 0px;
     margin-right: 0px;
   }
-  .gridIndex {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 120px 1fr 1fr;
-    justify-items: center;
-    grid-template-areas: "titulo titulo" "principal principal" "secundaria terciaria";
+  .fraseFoddies {
+    padding: 3em;
   }
-  .gridIndex .tituloRecetas {
-    width: 100%;
-    margin-top: 70px;
-    font-size: 40px;
+  .consejosIndex .index {
+    margin: 4em;
   }
-  .gridIndex .prin {
-    display: flex;
-    flex-direction: row;
-    width: 86%;
-    justify-content: space-evenly;
+  .opiniones h4 {
+    font-size: 27px;
+    padding-top: 1em;
   }
-  .gridIndex .prin img {
-    width: 300px;
-    height: 220px;
-  }
-  .gridIndex .prin div {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-right: 0.5em;
-  }
-  .gridIndex .seg img {
-    width: 220px;
-    height: 157px;
-  }
-  .gridIndex .seg h4 {
-    text-align: center;
-  }
-  .gridIndex .ter img {
-    width: 220px;
-    height: 157px;
-  }
-  .gridIndex .ter h4 {
-    text-align: center;
+  .opiniones .card-info .text-body {
+    font-size: 1em;
+    padding-bottom: 1.5em;
   }
   .mainAlmuerzo h1 {
     font-size: 60px;
@@ -626,18 +637,22 @@ iframe {
     align-items: center;
   }
   .principalCena .textoCena {
-    font-size: 30px;
+    font-size: 34px;
   }
-  .principalCena .principal {
-    flex-direction: row;
+  .principalCena img {
+    width: 350px;
+    height: 350px;
   }
-  .principalCena .principal img {
-    width: 250px;
-    height: 177px;
+  .principalCena .textoPizza h3 {
+    font-size: 31px;
   }
-  .principalCena .principal .textoNoquis {
-    margin-top: 1em;
-    margin-right: 1em;
+  .principalCena .textoPizza h4 {
+    font-size: 25px;
+    padding-bottom: 0.5em;
+  }
+  .principalCena .textoPizza ol {
+    font-size: 21px;
+    padding-bottom: 2.5em;
   }
   .gridCena {
     display: grid;
@@ -657,35 +672,30 @@ iframe {
   .mainPostre h1 {
     font-size: 60px;
   }
-  .recetaPostre h2 {
+  .receta {
+    height: 80vh;
+  }
+  .receta img {
+    width: 200px;
+    height: 200px;
+  }
+  .receta h3 {
     font-size: 30px;
-    margin-bottom: 0.5em;
   }
-  .recetaPostre .contenedorCarousel {
-    margin-bottom: 5em;
+  .receta h4 {
+    font-size: 23px;
+    margin-top: 0.5em;
+    padding-bottom: 0.1em;
   }
-  .recetaPostre .contenedorCarousel img {
-    width: 480px;
-    height: 350px;
+  .receta ol {
+    font-size: 19px;
   }
-  .recetaPostre .contenedorCarousel h3 {
-    width: 480px;
-    font-size: 25px;
+  .contenedorCarousel img {
+    width: 370px;
+    height: 250px;
   }
-  .reemplazos .fraseTips p {
-    font-size: 25px;
-  }
-  .reemplazos .sustitutoL {
-    margin-right: 6em;
-  }
-  .reemplazos .sustitutoL p {
-    font-size: 20px;
-  }
-  .reemplazos .sustitutoR {
-    margin-left: 6em;
-  }
-  .reemplazos .sustitutoR p {
-    font-size: 20px;
+  .contenedorCarousel h3 {
+    width: 370px;
   }
   .fraseFooter {
     font-size: 35px;
@@ -699,38 +709,35 @@ iframe {
   .tituloRecetas {
     font-size: 45px;
   }
-  .gridIndex {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 110px 1fr 1fr;
-    grid-template-areas: "titulo titulo" "principal principal" "secundaria terciaria";
+  .fraseFoddies {
+    padding: 4em;
   }
-  .gridIndex .tituloRecetas {
-    font-size: 50px;
+  .fraseFoddies h2 {
+    font-size: 2.7em;
   }
-  .gridIndex .prin {
-    width: 87%;
+  .fraseFoddies h3 {
+    font-size: 1.5em;
+  }
+  .consejosIndex {
+    margin: 4em 0px 4em;
+  }
+  .consejosIndex p {
+    font-size: 18px;
+  }
+  .consejosIndex .izq {
+    margin: 0em 25em 0em 7em;
+  }
+  .consejosIndex .der {
+    margin: 0em 7em 0em 25em;
+  }
+  .opiniones h4 {
+    font-size: 30px;
+  }
+  .opiniones .carousel {
     height: 350px;
-    margin-top: 2em;
   }
-  .gridIndex .prin img {
-    width: 400px;
-    height: 300px;
-  }
-  .gridIndex .seg {
-    width: 75%;
-    margin-top: 0px;
-  }
-  .gridIndex .seg img {
-    width: 280px;
-    height: 200px;
-  }
-  .gridIndex .ter {
-    width: 75%;
-    margin-top: 0px;
-  }
-  .gridIndex .ter img {
-    width: 280px;
-    height: 200px;
+  .opiniones .cardIndex {
+    margin-top: 1.5em;
   }
   .mainAlmuerzo h1 {
     font-size: 70px;
@@ -738,8 +745,12 @@ iframe {
   .padreCard h2 {
     font-size: 30px;
   }
+  .padreCard p {
+    width: 85%;
+    font-size: 25px;
+  }
   .padreCard .card {
-    height: 500px;
+    width: 85%;
   }
   .gridAlmuerzo {
     grid-template-columns: 1fr 1fr 1fr;
@@ -750,21 +761,29 @@ iframe {
   .mainCena h1 {
     font-size: 70px;
   }
+  .textoCena {
+    grid-area: titulo;
+  }
+  img {
+    grid-area: imagen;
+  }
+  .textoPizza {
+    grid-area: pizza;
+  }
+  .principalCena {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 1fr;
+    grid-template-areas: "titulo titulo" "imagen pizza";
+    justify-items: center;
+  }
   .principalCena .textoCena {
     font-size: 38px;
   }
-  .principalCena .principal {
-    display: flex;
-    flex-direction: row;
-  }
-  .principalCena .principal img {
+  .principalCena img {
     width: 400px;
-    height: 300px;
-  }
-  .principalCena .principal .textoNoquis {
-    display: flex;
-    flex-direction: column;
-    padding-right: 1em;
+    height: 400px;
+    margin: 1em 0em 3em 2em;
   }
   .gridCena {
     grid-template-columns: 1fr 1fr;
@@ -777,30 +796,49 @@ iframe {
   .mainPostre h1 {
     font-size: 70px;
   }
-  .recetaPostre h2 {
+  .receta {
+    padding: 1.5em;
+  }
+  .receta img {
+    width: 300px;
+    height: 300px;
+    margin: 2em;
+  }
+  .receta h3 {
     font-size: 35px;
   }
-  .recetaPostre .contenedorCarousel img {
+  img {
+    grid-area: imagen;
+  }
+  .texto {
+    grid-area: texto;
+  }
+  .dificultad {
+    grid-area: dificultad;
+  }
+  .unoPostre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 100px;
+    grid-template-areas: "imagen texto" ". dificultad";
+    justify-items: center;
+    align-content: center;
+  }
+  .dosPostre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 100px;
+    grid-template-areas: "texto imagen" "dificultad .";
+    justify-items: center;
+    align-content: center;
+  }
+  .contenedorCarousel img {
     width: 570px;
     height: 400px;
   }
-  .recetaPostre .contenedorCarousel h3 {
+  .contenedorCarousel h3 {
     width: 570px;
-  }
-  .reemplazos .fraseTips {
-    font-size: 30px;
-  }
-  .reemplazos .sustitutoL {
-    margin-right: 8em;
-  }
-  .reemplazos .sustitutoL p {
-    font-size: 23px;
-  }
-  .reemplazos .sustitutoR {
-    margin-left: 8em;
-  }
-  .reemplazos .sustitutoR p {
-    font-size: 23px;
+    margin-bottom: 2em;
   }
   .fraseFooter {
     font-size: 35px;
@@ -820,9 +858,51 @@ iframe {
     width: 330px;
     height: 237px;
   }
-  .gridIndex .prin img {
-    width: 480px;
-    height: 307px;
+  .fraseFoddies h2 {
+    font-size: 3.4em;
+    padding: 2em 2em;
+  }
+  .fraseFoddies h3 {
+    font-size: 1.8em;
+  }
+  .consejosIndex .index img {
+    height: 80px;
+    width: 80px;
+  }
+  .consejosIndex .index h4 {
+    font-size: 30px;
+  }
+  .consejosIndex .index p {
+    font-size: 22px;
+  }
+  .consejosIndex .izq {
+    margin: 2em 30em 2em 7em;
+  }
+  .consejosIndex .der {
+    margin: 2em 7em 2em 30em;
+  }
+  .opiniones h4 {
+    font-size: 33px;
+    padding-top: 1.5em;
+  }
+  .opiniones .carousel {
+    height: 400px;
+  }
+  .opiniones .carousel .carousel-inner {
+    height: 350px;
+  }
+  .opiniones .cardIndex .card-img {
+    width: 90px;
+    height: 90px;
+  }
+  .opiniones .card-info {
+    padding-top: 6em;
+  }
+  .opiniones .card-info .text-title {
+    font-size: 1.5em;
+  }
+  .opiniones .card-info .text-body {
+    font-size: 1.2em;
   }
   .mainAlmuerzo h1 {
     font-size: 90px;
@@ -830,8 +910,12 @@ iframe {
   .padreCard h2 {
     font-size: 38px;
   }
+  .padreCard p {
+    font-size: 30px;
+  }
   .padreCard .card {
     height: 600px;
+    margin-bottom: 4em;
   }
   .gridAlmuerzo {
     margin-bottom: 3em;
@@ -839,43 +923,78 @@ iframe {
   .mainCena h1 {
     font-size: 90px;
   }
-  .principalCena .principal img {
-    width: 600px;
-    height: 400px;
+  .principalCena {
+    grid-template-rows: 200px 1fr 1fr;
+    grid-template-areas: "titulo titulo" "imagen pizza" "completa completa";
   }
-  .principalCena .textoNoquis {
+  .principalCena .textoCena {
+    font-size: 46px;
+    padding: 2em opx;
+  }
+  .principalCena img {
+    margin: 0px 0px 0px 4em;
+  }
+  .principalCena .textoPizza {
     padding-right: 1em;
   }
-  .principalCena .textoNoquis h3 {
-    font-size: 30px;
+  .principalCena .textoPizza h3 {
+    font-size: 35px;
   }
-  .principalCena .textoNoquis h4 {
-    font-size: 20px;
+  .principalCena .textoPizza h4 {
+    font-size: 28px;
   }
-  .principalCena .textoNoquis ol {
+  .principalCena .textoPizza ol {
+    font-size: 24px;
+  }
+  .principalCena .recetaCompleta {
+    grid-area: completa;
+    display: block;
+    width: 80%;
+  }
+  .principalCena .recetaCompleta p {
+    color: white;
     font-size: 20px;
+    text-align: justify;
+  }
+  .principalCena .recetaCompleta .dificultad {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .principalCena .recetaCompleta .dificultad p {
+    text-transform: uppercase;
+    letter-spacing: 0.0005rem;
+    font-weight: 200;
+    color: rgb(173, 173, 173);
+    padding: 1em;
   }
   .mainPostre h1 {
     font-size: 90px;
   }
+  .receta img {
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+  }
+  .receta h3 {
+    font-size: 45px;
+  }
+  .receta h4 {
+    font-size: 29px;
+  }
+  .receta ol {
+    font-size: 22px;
+  }
+  .receta .dificultad {
+    font-size: 19px;
+  }
+  .unoPostre {
+    padding-right: 4em;
+  }
+  .dosPostre {
+    padding-left: 4em;
+  }
   .contenedorCarousel h3 {
-    font-size: 30px;
-  }
-  .reemplazos .fraseTips p {
-    font-size: 33px;
-  }
-  .reemplazos .sustitutoL {
-    margin-right: 20em;
-    margin-bottom: 3em;
-  }
-  .reemplazos .sustitutoL p {
-    font-size: 30px;
-  }
-  .reemplazos .sustitutoR {
-    margin-left: 20em;
-    margin-bottom: 3em;
-  }
-  .reemplazos .sustitutoR p {
     font-size: 30px;
   }
   .form-box {

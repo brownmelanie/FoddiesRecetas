@@ -8,55 +8,26 @@
 		margin-right: 0px;
 	}
 //index//
-	.gridIndex {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 120px 1fr 1fr;
-		justify-items: center;
-		grid-template-areas: 
-        "titulo titulo" 
-        "principal principal" 
-        "secundaria terciaria";
-	    .tituloRecetas {
-		    width: 100%;
-		    margin-top: 70px;
-		    font-size: 40px;
+    .fraseFoddies{
+        padding: 3em;
+    }
+    .consejosIndex{
+        .index{
+            margin: 4em;
         }
-        .prin {
-            display: flex;
-            flex-direction: row;
-            width: 86%;
-            justify-content: space-evenly;
-                img {
-                    width: 300px;
-                    height: 220px;
-                }
-                div {
-                    display: flex;
-                    flex-direction: column;
-                    text-align: left;
-                    margin-right: 0.5em;
-                }
+    }
+    .opiniones{
+        h4{
+            font-size: 27px;
+            padding-top: 1em;
         }
-        .seg {
-            img {
-                width: 220px;
-                height: 157px;
-            }
-            h4{
-                text-align: center;
+        .card-info{
+            .text-body{
+                font-size: 1em;
+                padding-bottom: 1.5em;
             }
         }
-        .ter {
-            img {
-                width: 220px;
-                height: 157px;
-            }
-            h4{
-                text-align: center;
-            }
-        }
-	}
+    }
 //almuerzo//
     .mainAlmuerzo{
         h1{
@@ -93,17 +64,23 @@
 		flex-direction: column;
 		align-items: center;
         .textoCena{
-            font-size: 30px;
+            font-size: 34px;
         }
-        .principal{
-            flex-direction: row;
-            img{
-                width: 250px;
-                height: 177px;
+        img{
+            width: 350px;
+            height: 350px;
+        }
+        .textoPizza{
+            h3{
+                font-size: 31px;
             }
-            .textoNoquis{
-                margin-top: 1em;
-                margin-right: 1em;
+            h4{
+                font-size: 25px;
+                padding-bottom: 0.5em;
+            }
+            ol{
+                font-size: 21px;
+                padding-bottom: 2.5em;
             }
         }
 	}
@@ -133,42 +110,34 @@
             font-size: 60px;
         }
     }
-	.recetaPostre {
-		h2 {
-			font-size: 30px;
-			margin-bottom: 0.5em;
-		}
-        .contenedorCarousel {
-            img {
-                width: 480px;
-                height: 350px;
-            }
-            h3 {
-                width: 480px;
-                font-size: 25px;
-            }
-            margin-bottom: 5em;
+    .receta{
+        height: 80vh;
+        img{
+            width: 200px;
+            height: 200px;
         }
-	}
-    .reemplazos{
-        .fraseTips {
-            p {
-                font-size: 25px;
-            }
+        h3{
+            font-size: 30px;
         }
-        .sustitutoL {
-            margin-right: 6em;
-            p {
-                font-size: 20px;
-            }
+        h4{
+            font-size: 23px;
+            margin-top: 0.5em;
+            padding-bottom: 0.1em;
         }
-        .sustitutoR {
-            margin-left: 6em;
-            p {
-                font-size: 20px;
-            }
+        ol{
+            font-size: 19px;
         }
     }
+    .contenedorCarousel{
+        img{
+            width: 370px;
+            height: 250px;
+        }
+        h3{
+            width: 370px;
+        }
+    }
+
 //footer//
 	.fraseFooter {
         font-size: 35px;
@@ -185,42 +154,38 @@
 		font-size: 45px;
 	}
 //index//
-	.gridIndex {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 110px 1fr 1fr;
-		grid-template-areas: 
-        "titulo titulo" 
-        "principal principal" 
-        "secundaria terciaria";
-        .tituloRecetas{
-            font-size: 50px;
+    .fraseFoddies{
+        padding: 4em;
+        h2{
+            font-size: 2.7em;
         }
-        .prin {
-            width: 87%;
+        h3{
+            font-size: 1.5em;
+        }
+    }
+    .consejosIndex{
+        margin: 4em 0px 4em;
+        p{
+            font-size: 18px;
+        }
+        .izq{
+            margin: 0em 25em 0em 7em;
+        }
+        .der{
+            margin: 0em 7em 0em 25em;;
+        }
+    }
+    .opiniones{
+        h4{
+            font-size: 30px;
+        }
+        .carousel{
             height: 350px;
-            margin-top: 2em;
-            img {
-                width: 400px;
-                height: 300px;
-            }
         }
-        .seg {
-            width: 75%;
-            margin-top: 0px;
-            img {
-                width: 280px;
-                height: 200px;
-            }
+        .cardIndex{
+            margin-top: 1.5em;
         }
-        .ter {
-            width: 75%;
-            margin-top: 0px;
-            img {
-                width: 280px;
-                height: 200px;
-            }
-        }
-	}
+    }
 //almuerzo//
     .mainAlmuerzo{
         h1{
@@ -231,8 +196,12 @@
 		h2 {
 			font-size: 30px;
 		}
-        .card {
-            height: 500px;
+        p{
+            width: 85%;
+            font-size: 25px;
+        }
+        .card{
+            width: 85%;
         }
 	}
 	.gridAlmuerzo {
@@ -250,22 +219,30 @@
             font-size: 70px;
         }
     }
+    .textoCena{
+        grid-area: titulo;
+    }
+    img{
+        grid-area: imagen;
+    }
+    .textoPizza{
+        grid-area: pizza;
+    }
     .principalCena{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 1fr;
+        grid-template-areas: 
+        "titulo titulo"
+        "imagen pizza";
+        justify-items: center;
         .textoCena{
             font-size: 38px;
         }
-        .principal {
-            display: flex;
-            flex-direction: row;
-            img {
-                width: 400px;
-                height: 300px;
-            }
-            .textoNoquis {
-                display: flex;
-                flex-direction: column;
-                padding-right: 1em;
-            }
+        img{
+            width: 400px;
+            height: 400px;
+            margin: 1em 0em 3em 2em;
         }
     }
 	.gridCena {
@@ -285,37 +262,57 @@
             font-size: 70px;
         }
     }
-	.recetaPostre {
-		h2 {
-			font-size: 35px;
-		}
-        .contenedorCarousel {
-            img {
-                width: 570px;
-                height: 400px;
-            }
-            h3 {
-                width: 570px;
-            }
+	.receta {
+        padding: 1.5em;
+        img{
+            width: 300px;
+            height: 300px;
+            margin: 2em;
         }
-	}
-    .reemplazos{
-        .fraseTips {
-            font-size: 30px;
-        }
-        .sustitutoL {
-            margin-right: 8em;
-            p {
-                font-size: 23px;
-            }
-        }
-        .sustitutoR {
-            margin-left: 8em;
-            p {
-                font-size: 23px;
-            }
+        h3{
+            font-size: 35px;
         }
     }
+    img{
+        grid-area: imagen;
+    }
+    .texto{
+        grid-area: texto;
+    }
+    .dificultad{
+        grid-area: dificultad;
+    }
+    .unoPostre{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px 100px;
+        grid-template-areas: 
+        "imagen texto"
+        ". dificultad";
+        justify-items: center;
+        align-content: center;
+    }
+    .dosPostre{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px 100px;
+        grid-template-areas: 
+        "texto imagen"
+        "dificultad .";
+        justify-items: center;
+        align-content: center;
+    }
+    .contenedorCarousel {
+        img {
+            width: 570px;
+            height: 400px;
+        }
+        h3 {
+            width: 570px;
+            margin-bottom: 2em;
+        }
+    }
+
 //footer//
 	.fraseFooter {
 		font-size: 35px;
@@ -340,11 +337,59 @@
 		}
 	}
 //index//
-    .gridIndex{
-        .prin {
-            img {
-                width: 480px;
-                height: 307px;
+    .fraseFoddies{
+        h2{
+            font-size: 3.4em;
+            padding: 2em 2em;
+        }
+        h3{
+            font-size: 1.8em;
+        }
+    }
+    .consejosIndex{
+        .index{
+            img{
+                height: 80px;
+                width: 80px;
+            }
+            h4{
+                font-size: 30px;
+            }
+            p{
+                font-size: 22px;
+            }
+        }
+        .izq{
+            margin: 2em 30em 2em 7em;
+        }
+        .der{
+            margin: 2em 7em 2em 30em;
+        }
+    }
+    .opiniones{
+        h4{
+            font-size: 33px;
+            padding-top: 1.5em;
+        }
+        .carousel{
+            height: 400px;
+            .carousel-inner{
+                height: 350px;
+            }
+        }
+        .cardIndex{
+            .card-img{
+                width: 90px;
+                height: 90px;
+            }
+        }
+        .card-info{
+            padding-top: 6em;
+            .text-title{
+                font-size: 1.5em;
+            }
+            .text-body{
+                font-size: 1.2em;
             }
         }
     }
@@ -358,8 +403,12 @@
         h2 {
             font-size: 38px;
         }
+        p{
+            font-size: 30px;
+        }
         .card {
             height: 600px;
+            margin-bottom: 4em;
         }
     }
     .gridAlmuerzo {
@@ -372,22 +421,50 @@
         }
     }
     .principalCena{
-        .principal {
-            img {
-                width: 600px;
-                height: 400px;
-            }
+        grid-template-rows: 200px 1fr 1fr;
+        grid-template-areas:
+        "titulo titulo"
+        "imagen pizza"
+        "completa completa";
+        .textoCena{
+            font-size: 46px;
+            padding: 2em opx;
         }
-        .textoNoquis {
+        img{
+            margin: 0px 0px 0px 4em;
+        }
+        .textoPizza{
             padding-right: 1em;
             h3 {
-                font-size: 30px;
+                font-size: 35px;
             }
             h4 {
-                font-size: 20px;
+                font-size: 28px;
             }
             ol {
+                font-size: 24px;
+            }
+        }
+        .recetaCompleta{
+            grid-area: completa;
+            display: block;
+            width: 80%;
+            p{
+                color: $blanco;
                 font-size: 20px;
+                text-align: justify;
+            }
+            .dificultad{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                p{
+                    text-transform: uppercase;
+                    letter-spacing: 0.0005rem;
+                    font-weight: 200;
+                    color: rgb(173, 173, 173);
+                    padding: 1em;
+                }
             }
         }
     }
@@ -397,30 +474,34 @@
             font-size: 90px;
         }
     }
+    .receta{
+        img{
+            margin-top: 100px;
+            width: 400px;
+            height: 400px;
+        }
+        h3{
+            font-size: 45px;
+        }
+        h4{
+            font-size: 29px;
+        }
+        ol{
+            font-size: 22px;
+        }
+        .dificultad{
+            font-size: 19px;
+        }
+    }
+    .unoPostre{
+        padding-right: 4em;
+    }
+    .dosPostre{
+        padding-left: 4em;
+    }
     .contenedorCarousel{
         h3{
             font-size: 30px;
-        }
-    }
-    .reemplazos{
-        .fraseTips{
-            p{
-                font-size: 33px;
-            }
-        }
-        .sustitutoL {
-            margin-right: 20em;
-            margin-bottom: 3em;
-            p{
-                font-size: 30px;
-            }
-        }
-        .sustitutoR {
-            margin-left: 20em;
-            margin-bottom: 3em;
-            p{
-                font-size: 30px;
-            }
         }
     }
 //usuario//

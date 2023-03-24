@@ -2,36 +2,41 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+    background-color: #497c49;
     .textoCena{
         margin-top: 2em;
-        color: #006600;
+        color: $amarillo;
         font-weight: bold;
         text-align: center;
+        padding: 0em 1em 1em;
+        font-size: 29px;
     }
-    .principal {
-        width: fit-content;
-        border: rgb(250, 250, 250) 0.2em solid;
-        border-radius: 0.3em;
+    img{
+        border-radius: 50%;
+        padding-bottom: 1em;
+    }
+    .textoPizza{
         display: flex;
         flex-direction: column;
         align-items: center;
-        img {
-            padding: 0.7em;
-            border-radius: 1em;
-        }
         h3{
-            text-align: center;
             font-weight: bold;
+            color: $blanco;
+            font-size: 27px;
+            padding-bottom: 1em;
         }
         h4{
-            text-align: center;
-            font-weight: bold;
+            font-weight: 500;
+            color: $blanco;
         }
         ol{
-            li{
-                margin-left: 3em;
-            }
+            color: $blanco;
+            font-size: 18px;
+            padding-bottom: 2em;
         }
+    }
+    .recetaCompleta{
+        display: none;
     }
 }
 .fideos {
@@ -58,6 +63,9 @@
 .tacos {
 	grid-area: tacos;
 }
+.noquis{
+    grid-area: noquis;
+}
 .gridCena {
 	display: grid;
 	justify-items: center;
@@ -66,8 +74,8 @@
 	margin-top: 1em;
 	margin-bottom: 2em;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-areas: "fideos" "milanesa" "horno" "papas" "calabaza" "pasta" "empanada" "tacos";
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: "fideos" "milanesa" "horno" "papas" "calabaza" "pasta" "empanada" "tacos" "noquis";
     .cuarta {
         transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         border: rgb(250, 250, 250) 0.2em solid;

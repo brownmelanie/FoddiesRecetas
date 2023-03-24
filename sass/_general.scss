@@ -9,7 +9,7 @@ body {
 	overflow-x: hidden;
     main {
         margin-top: 1em;
-        margin-bottom: 1em;
+        margin-bottom: 3em;
         background: #f8f9fa;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
         h1 {
@@ -29,7 +29,7 @@ body {
             box-shadow: 0.3em 0.3em 0.7em #00000015;
     }
     .todasReceta {
-        margin-top: 3em;
+        margin: 3em 1.5em 1em;
         color: $verde;
         font-weight: bold;
         text-align: center;

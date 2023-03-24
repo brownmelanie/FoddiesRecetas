@@ -1,95 +1,101 @@
-.gridIndex {
-	display: grid;
-	justify-items: center;
-	justify-content: center;
-	gap: 0.4em;
-	margin-bottom: 2em;
-	grid-template-columns: 1fr;
-	grid-template-rows: 70px 1fr 1fr 1fr;
-	grid-template-areas: 
-    "titulo"
-    "principal"
-    "secundaria"
-    "terciaria";
-    .tituloRecetas {
-        font-size: 27px;
+.fraseFoddies{
+    background-image: linear-gradient(rgba(5, 7, 12, 0.377), rgba(5, 7, 12, 0.37)), url(../img/veggies.webp);
+    height: 85vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+        color: white;
         font-weight: bold;
+        font-size: 2em;
         text-align: center;
-        color: $verde;
-        margin-top: 40px;
-        grid-area: titulo;
+        padding: 2em 1em;
     }
-    .prin {
+    h3{
+        color:white;
+        font-size: 1.3em;
+        text-align: center;
+        padding: 0px 1em 2em 1em;
+    }
+}
+
+.consejosIndex{
+    padding: 2em 0px 2em;
+    .index{
+        margin: 2em;
         display: flex;
         flex-direction: column;
         align-items: center;
-        transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        border: rgb(250, 250, 250) 0.2em solid;
-        border-radius: 0.3em;
-        grid-area: principal;
-        h3{
-            text-align: center;
-            font-weight: bold;
-        }
-        h4{
-            text-align: center;
-            font-weight: bold;
-        }
-        ol{
-            li{
-                margin-left: 1.5em;
-            }
-        }
-        img {
-            padding: 0.7em;
-            border-radius: 1em;
-        }
-        &:hover {
-            border: #006600 0.2em solid;
-        }
-    }
-    .seg {
-        grid-area: secundaria;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        border: rgb(250, 250, 250) 0.2em solid;
-        border-radius: 0.3em;
-        h3{
-            font-weight: bold;
-        }
+        text-align: center;
         h4{
             font-weight: bold;
-        }
-        img {
-            padding: 0.7em;
-            border-radius: 1em;
-        }
-        &:hover {
-            border: #006600 0.2em solid;
-        }
-    }
-    .ter {
-        grid-area: terciaria;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        border: rgb(250, 250, 250) 0.2em solid;
-        border-radius: 0.3em;
-        h3{
-            font-weight: bold;
-        }
-        h4{
-            font-weight: bold;
-        }
-        img {
-            padding: 0.7em;
-            border-radius: 1em;
-        }
-        &:hover {
-            border: #006600 0.2em solid;
+            color: #252525;
+            padding-top: 0.5em;
         }
     }
 }
+
+.opiniones{
+    background-color: $background-blanco;
+    margin-bottom: 0.1em;
+    box-shadow: 0px -3px 14px -4px rgba(0,0,0,0.48);
+    h4{
+        color: $verde;
+        font-weight: bold;
+        text-align: center;
+        padding: 1em 1em 0px;
+    }
+    .cardIndex {
+        height: 250px;
+        background-color: $background-blanco;
+        margin: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .card-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border-style:solid;
+            border-width: 1px;
+            border-color:$verde;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+    .card-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5em 1rem 0px;
+        .text-body {
+            width: 200px;
+            font-size: 0.9em;
+            text-align: center;
+            color: #5f5f5f;
+            font-style: italic;
+        }
+        .text-title {
+            text-transform: uppercase;
+            font-size: 1.3em;
+            color: $verde;
+            letter-spacing: 0.05rem;
+            margin-bottom: 0.5em;
+            font-weight: 500;
+        }
+    }
+}
+
+.uno{
+    background-image: url(../img/personUno.png);
+}
+.dos{
+    background-image: url(../img/personaDos.png);
+}
+.tres{
+    background-image: url(../img/personaTres.png);
+}
+
+

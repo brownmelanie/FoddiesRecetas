@@ -51,65 +51,80 @@
             </div>
         </nav>
     </header>
-    <main> <!--PRINCIPAL-->
-        <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img src="./img/carouselUno.png" class="d-block w-100" alt="Receta muffins de arándanos">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/carouselDos.png" class="d-block w-100" alt="Desayunos saludables">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/carouselTres.png" class="d-block w-100" alt="Comidas para la semana">
-            </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+    <main class="fraseFoddies"> <!--PRINCIPAL-->
+        <h2>Sabemos qué es importante para vos</h2>
+        <h3>Te acompañamos en tus comidas de todos los días</h3>
     </main>
-    <section class="gridIndex"> <!--GENERAL-->
-        <h2 class="tituloRecetas">RECETAS DESTACADAS</h2>
-        <div class="contenedor prin">
-                <img src="./img/dip-de-espinaca.jpg" width="300" height="207" alt="Dip de espinaca">
-                <div>
-                    <h3>Dip de espinaca</h3>
-                    <h4>Ingredientes necesarios</h4>
-                    <ol>
-                        <li>Queso crema</li>
-                        <li>Mayonesa</li>
-                        <li>Espinaca congelada</li>
-                        <li>Condimentos a gusto</li>
-                    </ol>
+    <section class="consejosIndex"> <!--GENERAL-->
+        <div class="index izq">
+            <img src="./img/tiempo.png" alt="reloj">
+            <h4>Ahorrá tiempo</h4>
+            <p>Sabemos la importancia del tiempo en el mundo moderno, ahorrate el tiempo de pensar qué comer todos los dias con nuestras recetas.</p>
+        </div>
+        <div class="index der">
+            <img src="./img/sano.png" alt="Boca mordiendo una zanahoria">
+            <h4>Comé sano</h4>
+            <p>Se amable con tu cuerpo y tu organismo comiendo sano pero delicioso con nuestra variedad de recetas.</p>
+        </div>
+        <div class="index izq">
+            <img src="./img/disfruta.png" alt="cara sonriente">
+            <h4>Disfrutá</h4>
+            <p>Comer sano no tiene que ser sinónimo de comidas aburridas, explorá todas las opciones deliciosas que tenemos para vos.</p>
+        </div>
+        <div class="index der">
+            <img src="./img/habitos.png" alt="pulgar hacia abajo">
+            <h4>Evitá malos habitos</h4>
+            <p>Las comidas rápidas tienen gran porcentaje calórico y grasas saturadas, las cuales estan relacionadas con enfermedades cardiovasculares, entre otras.</p>
+        </div>
+    </section>
+    <section class="opiniones">
+        <h4>Opiniones de nuestros usuarios</h4>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="cardIndex">
+                        <div class="card-img uno">
+                            <div class="card-info">
+                                <p class="text-title">Sofía</p>
+                                <p class="text-body">AMO esta página, me salva siempre que me da fiaca pensar que cocinar (o sea todos los dias jaja).</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-        </div>
-        <div class="contenedor seg">
-                <img src="./img/fideos-huevo.jpg" width="300" height="207" alt="Fideos al huevo">
-                <h3>Fideos al huevo</h3>
-                <h4>Ingredientes necesarios</h4>
-                <ol>
-                    <li>Harina 000</li>
-                    <li>Huevos</li>
-                    <li>Leche</li>
-                    <li>Manteca</li>
-                </ol>
-        </div>
-        <div class="contenedor ter">
-                <img src="./img/muffins-arandanos.jpg" width="300" height="207" alt="Muffins de arándanos">
-                <h3>Muffins</h3>
-                <h4>Ingredientes necesarios</h4>
-                <ol>
-                    <li>Harina leudante</li>
-                    <li>Azúcar</li>
-                    <li>Aceite</li>
-                    <li>Huevos</li>
-                </ol>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <div class="cardIndex">
+                        <div class="card-img dos">
+                            <div class="card-info">
+                                <p class="text-title">Maru</p>
+                                <p class="text-body">Me encanta! Ya se la recomendé a todas mis amigas, tenés opciones para toda ocasión :).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <div class="cardIndex">
+                        <div class="card-img tres">
+                            <div class="card-info">
+                                <p class="text-title">Jorge</p>
+                                <p class="text-body">Muy útil para sacarte del apuro, estaría bueno que la implementen como App.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguente</span>
+            </button>
         </div>
     </section>
     <footer> <!--PIE DE PAGINA-->
