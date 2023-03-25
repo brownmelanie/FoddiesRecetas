@@ -101,7 +101,7 @@ footer ul {
 }
 
 .fraseFoddies {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.377), rgba(5, 7, 12, 0.37)), url(../img/veggies.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.377), rgba(5, 7, 12, 0.37)), url(../img/veggies.webp);
   height: 85vh;
   background-size: cover;
   background-attachment: fixed;
